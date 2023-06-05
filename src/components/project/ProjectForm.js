@@ -10,6 +10,18 @@ function ProjectForm({btnText}) {
 
     const [categories, setCategories] = useState([])
 
+    fetch("http://localhost:5000/categories", {
+        method: "GET",
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then((resp) => resp.json())
+    .then((data) => {
+        setCategories(data)
+    })
+    .catch((err) => console.log(err))
+
     return (
         <form className={styles.form}>
             <Input
