@@ -1,11 +1,11 @@
+import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-import { useState, useEffect } from 'react'
-
-import Message from '../layout/Message'
 import Container from '../layout/Container'
+
 import LinkButton from '../layout/LinkButton'
 import ProjectCard from '../project/ProjectCard'
+import Message from '../layout/Message'
 
 import styles from './Projects.module.css'
 
@@ -33,7 +33,6 @@ function Projects() {
     .catch(err => console.log(err))  
   }, [])
 
-
   return (
     <div className={styles.project_container}>
         <div className={styles.title_container}>
@@ -42,10 +41,14 @@ function Projects() {
         </div>
         {message && <Message type="success" msg={message} />}
         <Container customClass="start">
-          <ProjectCard />
+          {projects.length > 0 && 
+            projects.map((project) => (
+              <ProjectCard name={project.name} />
+            ))}
         </Container>
     </div>
   )
 }
 
 export default Projects
+
