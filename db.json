@@ -18,21 +18,8 @@
         "id": "1",
         "name": "Infra"
       },
-      "cost": 1100,
-      "services": [
-        {
-          "name": "Banco de Dados",
-          "cost": "100",
-          "description": "Contratar Banco de Dados",
-          "id": "bd6947c6-1b81-430a-9efd-9cda8625c038"
-        },
-        {
-          "name": "Contratar Dev FrontEnd",
-          "cost": "1000.00",
-          "description": "Criar novos componentes",
-          "id": "2802e470-4126-4362-ac9d-c91407376365"
-        }
-      ],
+      "cost": 0,
+      "services": [],
       "id": 3
     },
     {
