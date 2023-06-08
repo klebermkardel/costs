@@ -1,19 +1,8 @@
 {
   "projects": [
     {
-      "name": "PetLove",
-      "budget": "10000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
       "name": "React - Hora de Codar",
-      "budget": "8000",
+      "budget": "5000",
       "category": {
         "id": "3",
         "name": "Design"
@@ -21,6 +10,57 @@
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "name": "PetLove",
+      "budget": "5000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 100,
+      "services": [
+        {
+          "name": "Banco de Dados",
+          "cost": "100",
+          "description": "Contratar Banco de Dados",
+          "id": "bd6947c6-1b81-430a-9efd-9cda8625c038"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "Portfólio",
+      "budget": "2000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "Koding Web",
+      "budget": "1000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "name": "Projeto teste",
+      "budget": "3000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
     }
   ],
   "categories": [
