@@ -8,12 +8,14 @@ import NewProject from './components/pages/NewProject'
 import Company from './components/pages/Company'
 import Contact from './components/pages/Contact'
 import Project from './components/pages/Project'
+import ScrollToTop from './components/functions/ScrollToTop'
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Container customClass="min-height">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
