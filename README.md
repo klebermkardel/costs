@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Projeto Costs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+Este é um sistema de gerenciamento de projetos. Ele permite criar, visualizar, editar e excluir projetos, bem como atribuir categorias e orçamentos a eles. Além disso, você pode acompanhar o custo total de cada projeto com base nos serviços adicionados.
 
-In the project directory, you can run:
+## Tecnologias Utilizadas
 
-### `npm start`
+<p align="left">
+<a href="https://legacy.reactjs.org/docs/getting-started.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="JavaScript" /></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" /></a>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a>
+<a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
+<a href="https://nodejs.org/en/docs/guides" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="MySQL" /></a>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O sistema possui as seguintes funcionalidades principais:
 
-### `npm test`
+- Listar todos os projetos existentes.
+- Criar um novo projeto, fornecendo nome, orçamento e categoria.
+- Visualizar os detalhes de um projeto específico, incluindo seu nome, orçamento, categoria, custo atual e serviços adicionados.
+- Adicionar serviços a um projeto para acompanhar os custos individuais.
+- Editar as informações de um projeto, como nome, orçamento, categoria e serviços.
+- Excluir um projeto existente.
+- Listar todas as categorias disponíveis.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requisitos
 
-### `npm run build`
+Certifique-se de ter os seguintes requisitos instalados no seu ambiente de desenvolvimento:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js
+- npm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone este repositório:
 
-### `npm run eject`
+```git clone https://github.com/seu-usuario/costs.git```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Navegue até o diretório do projeto:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```cd costs```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Instale as dependências do projeto:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ - ```npm json-server``` (Simula backend fake)
+ - ```npm react icons``` (Biblioteca de ícones para serem usados no projeto)
+ - ```react-router-dom``` (Resolve problemas de rotas para as páginas de um site)
+ - ```uuid``` (Crie id únicos quando necessários para o projeto)
 
-## Learn More
+ 4. Inicie o servidor local:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ ```npm start```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ 5. O servidor estará em execução em `http://localhost:3000`.
 
-### Code Splitting
+ ## Uso
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Acesse o sistema usando seu navegador web e vá para `http://localhost:3000`.
+2. Você verá a lista de projetos existentes.
+3. Explore as diferentes funcionalidades do sistema, como criar um novo projeto, visualizar os detalhes de um projeto, editar informações de um projeto ou excluir um projeto existente.
+4. Você também pode listar todas as categorias disponíveis.
 
-### Analyzing the Bundle Size
+## Arquivo db.json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+O arquivo `db.json` contém os dados dos projetos e categorias do sistema. Certifique-se de atualizá-lo adequadamente se você adicionar, editar ou excluir projetos ou categorias.
 
-### Making a Progressive Web App
+## Contribuição
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contribuições são bem-vindas! Se você encontrar algum problema, bug ou tiver alguma sugestão de melhoria, fique à vontade para abrir uma nova issue ou enviar um pull request.
 
-### Advanced Configuration
+## Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Este projeto está licenciado sob a [MIT License](LICENSE).
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
